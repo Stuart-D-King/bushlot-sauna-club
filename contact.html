@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Inquire — Bushlot Sauna Club | Start Your Custom Sauna Build</title>
+  <meta name="description" content="Interested in a Bushlot mobile sauna? Start a conversation. Every build begins with an inquiry — tell us what you're thinking and we'll take it from there." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.bushlotsaunaclub.com/contact.html" />
+  <meta property="og:site_name"   content="Bushlot Sauna Club" />
+  <meta property="og:title"       content="Inquire — Bushlot Sauna Club" />
+  <meta property="og:description" content="Every Bushlot sauna is made to order. Start the conversation here." />
+  <meta property="og:image"       content="https://www.bushlotsaunaclub.com/img/Exterior2.jpeg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav nav-solid" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Bushlot</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="saunas.html">Our Saunas</a></li>
+        <li><a href="story.html">The Story</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="nav-cta" aria-current="page">Inquire</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div class="nav-mobile" role="navigation" aria-label="Mobile menu">
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="saunas.html">Our Saunas</a></li>
+        <li><a href="story.html">The Story</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Inquire →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <span class="label">Get in touch</span>
+        <h1 id="page-title">Start a Conversation</h1>
+        <p>Every Bushlot sauna is a made-to-order build. Tell us what you're thinking and we'll take it from there.</p>
+      </div>
+    </header>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" aria-labelledby="contact-form-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- LEFT: Info -->
+          <div class="contact-info">
+            <span class="label">Before you write</span>
+            <h2 id="contact-form-heading" class="mt-sm">What to expect.</h2>
+            <p class="lead">There's no sales pressure here — just a straightforward exchange. Tell us what you're considering and we'll respond with honest information about the build, customization options, timeline, and cost.</p>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Location</span>
+              <span class="contact-detail-value">Asheville, North Carolina</span>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">Response</span>
+              <span class="contact-detail-value">We typically respond within 1–2 business days.</span>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">Trade area</span>
+              <span class="contact-detail-value">Western NC · Eastern TN · Upstate SC — and beyond for the right project.</span>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">Capacity</span>
+              <span class="contact-detail-value">We build a limited number of saunas per year. If you're interested, reach out sooner rather than later.</span>
+            </div>
+
+            <div style="margin-top:2.5rem">
+              <p style="font-size:0.875rem; color:#7a7168; line-height:1.75">Not ready to commit? That's fine. Browse the <a href="faq.html" style="color:var(--amber)">FAQ</a> or <a href="saunas.html" style="color:var(--amber)">see the full build</a> first.</p>
+            </div>
+          </div>
+
+
+          <!-- RIGHT: Form -->
+          <div class="contact-form-wrap">
+
+            <!-- Success message (hidden until form submission) -->
+            <div id="form-success" class="form-success" role="alert" aria-live="polite">
+              <h3>Message received.</h3>
+              <p>Thanks for reaching out. We'll be in touch within 1–2 business days.</p>
+            </div>
+
+            <!--
+              FORMSPREE SETUP:
+              1. Sign up at https://formspree.io (free)
+              2. Create a new form — set the notification email to your address
+              3. Copy your form ID (looks like "xyzabcde")
+              4. Replace YOUR_FORM_ID in the action URL below with your actual form ID
+            -->
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              novalidate
+              aria-label="Inquiry form"
+            >
+
+              <div class="grid-2" style="gap:1.25rem; margin-bottom:0">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Stuart King"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="interest" class="form-label">What are you interested in?</label>
+                <select id="interest" name="interest" class="form-select">
+                  <option value="" disabled selected>Select one&hellip;</option>
+                  <option value="mobile-sauna">Mobile / trailer-mounted sauna</option>
+                  <option value="fixed-installation">Fixed installation sauna</option>
+                  <option value="both">Exploring both options</option>
+                  <option value="general">General question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="location" class="form-label">Where are you located?</label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  class="form-input"
+                  placeholder="Asheville, NC"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Tell us what you're thinking <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="I've been thinking about a sauna for the backyard&#10;&#10;Any questions, timeline considerations, or relevant details are helpful."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="referral" class="form-label">How did you hear about us?</label>
+                <select id="referral" name="referral" class="form-select">
+                  <option value="" disabled selected>Select one&hellip;</option>
+                  <option value="word-of-mouth">Word of mouth / referral</option>
+                  <option value="google">Google search</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="local-event">Local event</option>
+                  <option value="press">Press / media</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Honeypot spam prevention — hidden from humans -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Inquiry
+              </button>
+
+            </form>
+
+          </div><!-- /.contact-form-wrap -->
+
+        </div><!-- /.contact-layout -->
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Bushlot</span>
+        <div class="footer-meta">
+          <p class="footer-location">Asheville, North Carolina</p>
+          <p class="footer-copy">&copy; 2026 Bushlot Sauna Club LLC. All rights reserved.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="saunas.html">Our Saunas</a>
+          <a href="story.html">The Story</a>
+          <a href="contact.html">Inquire</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
