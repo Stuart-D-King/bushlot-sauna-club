@@ -40,7 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function () {
           mobileMenu.classList.remove('open');
           hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.setAttribute('aria-label', 'Open menu');
         });
+      });
+
+      // Escape closes the mobile menu and returns focus to the toggle
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+          mobileMenu.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.setAttribute('aria-label', 'Open menu');
+          hamburger.focus();
+        }
       });
     }
   }
@@ -121,6 +132,31 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 4000);
       }
     });
+  }
+
+  // =============================================
+  // SCROLL REVEAL — the Cycle section
+  // Honours prefers-reduced-motion: elements are shown immediately.
+  // =============================================
+  const revealEls = document.querySelectorAll('.reveal');
+
+  if (revealEls.length) {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduced || !('IntersectionObserver' in window)) {
+      revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+    } else {
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
+
+      revealEls.forEach(function (el) { io.observe(el); });
+    }
   }
 
 });

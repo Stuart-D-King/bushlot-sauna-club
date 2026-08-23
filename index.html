@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Bushlot Sauna Club — Handcrafted Mobile Saunas | Asheville, NC</title>
-  <meta name="description" content="Bushlot Sauna Club crafts premium, handcrafted mobile saunas in Asheville, North Carolina. Trailer-mounted, all-inclusive, and built to last. Inquire about your custom build." />
+  <meta name="description" content="Bushlot Sauna Club builds premium, handcrafted mobile saunas in Asheville, North Carolina. Trailer-mounted, all-inclusive, and made to last. Inquire about your custom build." />
   <meta name="keywords" content="custom sauna Asheville, mobile sauna North Carolina, handcrafted sauna, artisan sauna for sale, trailer sauna, mobile sauna NC" />
 
   <!-- Open Graph -->
@@ -14,16 +14,18 @@
   <meta property="og:site_name"   content="Bushlot Sauna Club" />
   <meta property="og:title"       content="Bushlot Sauna Club — Handcrafted Mobile Saunas" />
   <meta property="og:description" content="Premium, handcrafted mobile saunas built in Asheville, NC. Trailer-mounted, all-inclusive, and made to last." />
-  <meta property="og:image"       content="https://www.bushlotsaunaclub.com/img/exterior3.jpeg" />
+  <meta property="og:image"       content="https://www.bushlotsaunaclub.com/img/BSC-63.jpg" />
+  <meta name="twitter:card"       content="summary_large_image" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="img/logo/favicon.svg" />
+  <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png" />
 
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Local Business Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,6 +33,7 @@
     "name": "Bushlot Sauna Club",
     "description": "Handcrafted mobile saunas built in Asheville, North Carolina.",
     "url": "https://www.bushlotsaunaclub.com",
+    "image": "https://www.bushlotsaunaclub.com/img/BSC-63.jpg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Asheville",
@@ -44,52 +47,49 @@
 
 <body>
 
-  <!-- NAVIGATION -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <nav class="site-nav" data-transparent="true" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Bushlot Sauna Club — Home">Bushlot</a>
+      <a href="index.html" class="nav-logo">
+        <span class="sr-only">Bushlot Sauna Club — home</span>
+        <span class="mark mark--monogram" aria-hidden="true"></span>
+      </a>
       <ul class="nav-links" role="list">
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="saunas.html">Our Saunas</a></li>
+        <li><a href="saunas.html">The Sauna</a></li>
         <li><a href="story.html">The Story</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html" class="nav-cta">Inquire</a></li>
       </ul>
-      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
       </button>
     </div>
-    <div class="nav-mobile" role="navigation" aria-label="Mobile menu">
+    <div class="nav-mobile" id="nav-mobile">
       <ul role="list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="saunas.html">Our Saunas</a></li>
+        <li><a href="saunas.html">The Sauna</a></li>
         <li><a href="story.html">The Story</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Inquire →</a></li>
+        <li><a href="contact.html">Inquire &rarr;</a></li>
       </ul>
     </div>
   </nav>
 
-  <main>
+  <main id="main">
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Hero">
-      <img
-        src="img/exterior3.jpeg"
-        alt="Bushlot Sauna Club mobile sauna on trailer in Asheville, NC"
-        class="hero-bg"
-        loading="eager"
-        fetchpriority="high"
-      />
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span>Asheville, North Carolina</span>
-        </div>
-        <h1 class="hero-wordmark">Bushlot<br>Sauna Club</h1>
-        <p class="hero-tagline">Handcrafted mobile saunas.<br>Built to last, built to go.</p>
-        <a href="contact.html" class="btn btn-outline-light">Inquire About Yours</a>
+    <section class="band band--hero">
+      <img class="band-img" src="img/BSC-63.jpg" alt="A Bushlot mobile sauna standing in a mown clearing at the edge of the woods, late sun breaking through the canopy, the builder at the open door" loading="eager" fetchpriority="high" style="object-position:center 45%" />
+      <div class="band-content">
+        <h1 class="hero-wordmark">
+          <span class="sr-only">Bushlot Sauna Club</span>
+          <span class="mark mark--wordmark" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-tagline">Handcrafted mobile saunas.<br />Built to last, built to go.</p>
+        <a href="contact.html" class="btn btn-outline-light">Inquire about yours</a>
       </div>
       <div class="hero-scroll" aria-hidden="true">
         <div class="hero-scroll-line"></div>
@@ -97,118 +97,134 @@
       </div>
     </section>
 
-
-    <!-- THREE PILLARS -->
-    <section class="pillars-section" aria-labelledby="pillars-heading">
+    <section class="pillars-section section--taupe" aria-labelledby="pillars-heading">
+      <span class="mark mark--trees pillars-watermark" aria-hidden="true"></span>
       <div class="container">
         <div class="pillars-header">
           <span class="label">What sets us apart</span>
-          <h2 id="pillars-heading">Heritage. Craftsmanship. Mobility.</h2>
+          <h2 id="pillars-heading" class="mt-sm">Heritage. Craftsmanship. Mobility.</h2>
         </div>
         <div class="grid-3">
-
           <article class="pillar">
-            <span class="pillar-numeral">I</span>
-            <h3 class="pillar-title">Heritage</h3>
-            <p class="pillar-body">Rooted in a Scandinavian sauna tradition passed down through generations, Bushlot saunas carry a story that mass-market brands cannot replicate. Every build begins with that inheritance.</p>
+            <h3>Heritage</h3>
+            <p>Rooted in a Scandinavian sauna tradition carried across the Atlantic and passed down through three generations of one family. Every build begins with that inheritance.</p>
           </article>
-
           <article class="pillar">
-            <span class="pillar-numeral">II</span>
-            <h3 class="pillar-title">Craftsmanship</h3>
-            <p class="pillar-body">Tongue-and-groove joinery, premium wood species, and careful attention to every detail — inside and out. You are acquiring a piece of functional art, not an appliance off a warehouse shelf.</p>
+            <h3>Craftsmanship</h3>
+            <p>Tongue-and-groove joinery, premium wood species, and close attention to every detail inside and out. You are acquiring a piece of functional art, not an appliance off a warehouse shelf.</p>
           </article>
-
           <article class="pillar">
-            <span class="pillar-numeral">III</span>
-            <h3 class="pillar-title">Mobility</h3>
-            <p class="pillar-body">Built on a 5×10 utility trailer, your sauna goes where you go. Tow it to the lakeside, the campsite, or position it in the backyard. No permits, no fixed footprint, no limits.</p>
+            <h3>Mobility</h3>
+            <p>Built on a 5&times;8 utility trailer, your sauna goes where you go. Tow it to the lakeside, the campsite, or set it in the backyard. No permits, no fixed footprint.</p>
           </article>
-
         </div>
       </div>
     </section>
 
-
-    <!-- INTERIOR PHOTO QUOTE -->
-    <section class="photo-quote" aria-label="Interior view">
-      <img
-        src="img/interior.jpeg"
-        alt="Warm pine interior of a Bushlot Sauna Club mobile sauna with wood-burning stove"
-        class="photo-quote-bg"
-        loading="lazy"
-      />
-      <div class="photo-quote-content">
-        <blockquote>
-          "Not an appliance.<br>A work of craft."
-        </blockquote>
-        <p class="quote-source">Bushlot Sauna Club</p>
+    <section class="cycle section--dark" aria-labelledby="cycle-heading">
+      <div class="container">
+        <div class="cycle-header">
+          <span class="mark mark--rings cycle-rings" aria-hidden="true"></span>
+          <span class="label">The practice</span>
+          <h2 id="cycle-heading" class="mt-sm">Heat. Cold. Rest.</h2>
+          <p>Three moves, repeated until you lose count. The sauna is only the first of them &mdash; which is why we build ours to travel to the water.</p>
+        </div>
+        <div class="cycle-grid">
+          <article class="cycle-step reveal">
+            <figure>
+              <img src="img/BSC-31.jpg" alt="A ladle of water poured over the hot stones as three people sit along the sauna bench" loading="lazy" decoding="async" />
+            </figure>
+            <span class="cycle-numeral">I</span>
+            <h3>Heat</h3>
+            <p>Water meets stone and the room changes. Fifteen minutes, maybe twenty. You talk, or you don't.</p>
+          </article>
+          <article class="cycle-step reveal">
+            <figure>
+              <img src="img/BSC-52.jpg" alt="A swimmer floating on their back in a still forest creek, trees closing overhead" loading="lazy" decoding="async" />
+            </figure>
+            <span class="cycle-numeral">II</span>
+            <h3>Cold</h3>
+            <p>Straight out and into the creek. The shock is the point. Find your own plunge, wherever you tow it.</p>
+          </article>
+          <article class="cycle-step reveal">
+            <figure>
+              <img src="img/BSC-39.jpg" alt="Friends in wool sauna hats laughing together on the bench between rounds" loading="lazy" decoding="async" />
+            </figure>
+            <span class="cycle-numeral">III</span>
+            <h3>Rest</h3>
+            <p>Sit. Let your body catch up. Then go again &mdash; because the round after the cold is always the best one.</p>
+          </article>
+        </div>
       </div>
     </section>
 
+    <section class="band band--mid band--center">
+      <img class="band-img" src="img/BSC-2.jpg" alt="Split wood burning inside the open firebox of the sauna stove" loading="lazy" decoding="async" />
+      <div class="band-content">
+        <div class="quote-content">
+          <blockquote>Not an appliance.<br />A work of craft.</blockquote>
+          <cite class="quote-source">Bushlot Sauna Club</cite>
+        </div>
+      </div>
+    </section>
 
-    <!-- SPLIT — ALL-INCLUSIVE -->
-    <section class="split-section" aria-labelledby="allinclusive-heading">
+    <section class="section--paper" aria-labelledby="included-heading">
       <div class="container">
         <div class="grid-2">
-
           <div class="split-image-wrap">
-            <img
-              src="img/exterior2.jpeg"
-              alt="Handcrafted cedar door detail on a Bushlot Sauna Club mobile sauna"
-              loading="lazy"
-            />
+            <img src="img/BSC-1.jpg" alt="Hands lighting kindling in the sauna stove against the pine wall of the interior" loading="lazy" decoding="async" />
           </div>
-
           <div class="split-content">
-            <span class="label">The Bushlot Promise</span>
-            <h2 id="allinclusive-heading">Everything included.<br>Nothing extra.</h2>
-            <p class="lead">Every Bushlot sauna arrives ready to use on day one. No add-on accessories, no hidden costs after the sale — just everything you need to begin your sauna practice.</p>
-            <ul class="included-list" aria-label="What's included">
-              <li>Traditional sauna bucket &amp; ladle</li>
-              <li>Sauna hats for each seat</li>
-              <li>Essential oils to get started</li>
-              <li>Interior lighting</li>
-              <li>Towel hooks</li>
-              <li>Wood-burning or electric stove (your choice)</li>
-              <li>Premium interior wood (your selection)</li>
-              <li>Maker's mark and delivery</li>
-            </ul>
-            <a href="saunas.html" class="btn btn-outline-dark">See the Full Build</a>
+            <span class="label">The Bushlot standard</span>
+            <h2 id="included-heading" class="mt-sm">Everything included. Nothing extra.</h2>
+            <p class="lead">Every Bushlot sauna arrives ready to use on day one. No add-on accessories, no costs that appear after the sale &mdash; just everything you need to begin.</p>
+            <p class="mt-md" style="color:var(--ink-soft)">Stove, bucket and ladle, sauna hats, essential oils, interior lighting, towel hooks, delivery and an owner walkthrough &mdash; all of it, in the price.</p>
+            <a href="saunas.html" class="btn btn-outline-dark">See the full build</a>
           </div>
-
         </div>
       </div>
     </section>
 
+    <section class="band band--mid">
+      <img class="band-img" src="img/BSC-83.jpg" alt="The Bushlot sauna hitched behind an SUV, parked on a green bank beside a creek deep in the woods" loading="lazy" decoding="async" />
+      <div class="band-content">
+        <span class="label">Goes where you go</span>
+        <h2 class="mt-sm">Your lot. Or somebody else's.</h2>
+        <p class="mt-sm">Standard hitch, standard tow. Down the driveway, out to the lake, up a forest road to water nobody else has found yet.</p>
+      </div>
+    </section>
 
-    <!-- BOTTOM CTA -->
-    <section class="cta-section" aria-labelledby="cta-heading">
+    <section class="cta-section section--dark" aria-labelledby="cta-heading">
       <div class="container">
         <span class="label">Made to order</span>
-        <h2 id="cta-heading">Every sauna is built for one customer.</h2>
-        <p>Capacity is limited by design. If you're thinking about it, the time to reach out is now.</p>
-        <a href="contact.html" class="btn btn-outline-light">Start a Conversation</a>
+        <h2 id="cta-heading" class="mt-sm">Every sauna is built for one customer.</h2>
+        <p>Capacity is limited by design. If you are thinking about it, the time to reach out is now.</p>
+        <a href="contact.html" class="btn btn-outline-light">Start a conversation</a>
       </div>
     </section>
 
   </main>
 
 
-  <!-- FOOTER -->
-  <footer class="site-footer" aria-label="Site footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-inner">
-        <span class="footer-logo">Bushlot</span>
-        <div class="footer-meta">
-          <p class="footer-location">Asheville, North Carolina</p>
-          <p class="footer-copy">&copy; 2026 Bushlot Sauna Club LLC. All rights reserved.</p>
-        </div>
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">
+          <span class="sr-only">Bushlot Sauna Club</span>
+          <span class="mark mark--wordmark" aria-hidden="true"></span>
+        </a>
+        <span class="mark mark--stamp footer-stamp" aria-hidden="true"></span>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="saunas.html">Our Saunas</a>
+          <a href="saunas.html">The Sauna</a>
           <a href="story.html">The Story</a>
+          <a href="faq.html">FAQ</a>
           <a href="contact.html">Inquire</a>
         </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>Asheville, North Carolina</p>
+        <p>Photography by <a href="https://www.elizabellphotography.com/" target="_blank" rel="noopener noreferrer">Eliza Bell</a></p>
+        <p>&copy; 2026 Bushlot Sauna Club LLC</p>
       </div>
     </div>
   </footer>

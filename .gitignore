@@ -1,2 +1,35 @@
 # Business plan
 business_plan/
+# macOS
+.DS_Store
+# original images
+img/original/
+# design source files (editable masters - keep locally, never deployed)
+# Adobe
+*.ai
+*.psd
+*.psb
+*.indd
+*.idml
+*.eps
+*.aep
+# Affinity
+*.afdesign
+*.afphoto
+*.afpub
+# other design tools
+*.sketch
+*.fig
+*.xd
+
+# camera originals / large rasters
+*.cr2
+*.cr3
+*.nef
+*.arw
+*.dng
+*.orf
+*.raf
+*.rw2
+*.tif
+*.tiff
