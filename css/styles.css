@@ -112,7 +112,11 @@ h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
-h1 { font-size: clamp(2.5rem, 6.4vw, 5rem); }
+/*  The floor here only takes effect below a ~437px viewport, so desktop and
+    tablet are untouched. It has to clear the longest single word in any h1
+    ("CONVERSATION", 12 uppercase chars at 112% stretch); a 2.5rem floor
+    overflowed the container on every iPhone narrower than a Pro Max.        */
+h1 { font-size: clamp(1.75rem, 6.4vw, 5rem); }
 h2 { font-size: clamp(1.85rem, 4vw, 3.1rem); }
 h3 { font-size: clamp(1.1rem, 1.7vw, 1.4rem); letter-spacing: .01em; }
 h4 { font-size: 1.05rem; }
@@ -312,7 +316,10 @@ hr.rule { border: none; border-top: 1px solid var(--rule); margin: clamp(2.5rem,
   line-height: 1.55;
   color: rgba(242, 239, 231, .86) !important;
   max-width: 34ch;
-  margin-bottom: 2.25rem;
+  /*  The tagline is the last thing in the hero now that the CTA is gone, and
+      .band--hero centers its content — so any trailing margin would push the
+      wordmark and tagline visibly above true center.                        */
+  margin-bottom: 0;
 }
 
 .hero-scroll {
