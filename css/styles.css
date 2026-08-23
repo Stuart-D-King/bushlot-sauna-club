@@ -460,7 +460,9 @@ hr.rule { border: none; border-top: 1px solid var(--rule); margin: clamp(2.5rem,
 }
 .footer-logo { display: block; }
 .footer-logo .mark { width: 168px; color: var(--on-dark); }
-.footer-stamp { width: 84px; color: var(--olive); opacity: 1; justify-self: center; }
+/* Olive on the deep-evergreen footer is only 3.0:1, so the ring lettering
+   has little separation from the ground — size is what keeps it legible. */
+.footer-stamp { width: 132px; color: var(--olive); opacity: 1; justify-self: center; }
 
 .footer-links { display: flex; gap: 1.6rem; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
 .footer-links a {
@@ -472,10 +474,14 @@ hr.rule { border: none; border-top: 1px solid var(--rule); margin: clamp(2.5rem,
 .footer-links a:hover { color: var(--on-dark); }
 
 .footer-bottom {
-  display: flex; justify-content: space-between; gap: 1rem 2rem;
+  display: flex; align-items: baseline;
+  justify-content: space-between; gap: 1rem 2rem;
   flex-wrap: wrap; padding-top: 1.5rem;
   font-size: .76rem; color: rgba(242,239,231,.42);
 }
+/* These are flex items, not a run of prose — the global `p + p` top margin
+   pushes the 2nd and 3rd out of line with the 1st on wrapped rows. */
+.footer-bottom p { margin: 0; }
 .footer-bottom a { color: rgba(242,239,231,.62); border-bottom: 1px solid rgba(242,239,231,.25); }
 .footer-bottom a:hover { color: var(--on-dark); }
 
@@ -679,6 +685,9 @@ hr.rule { border: none; border-top: 1px solid var(--rule); margin: clamp(2.5rem,
 /* 22. RESPONSIVE
    ------------------------------------------------------------- */
 @media (max-width: 960px) {
+  /* Same crop problem as phones, milder — see the note in the 768 block. */
+  .band--tall { min-height: 56vh; }
+  .band--mid  { min-height: 50vh; }
   .grid-2, .story-portrait, .contact-layout { grid-template-columns: 1fr; }
   .grid-3, .cycle-grid { grid-template-columns: 1fr; }
   .cycle-grid { gap: 2.5rem; }
@@ -705,6 +714,19 @@ hr.rule { border: none; border-top: 1px solid var(--rule); margin: clamp(2.5rem,
   .footer-links { justify-content: center; }
   .footer-bottom { justify-content: center; text-align: center; }
   .band--hero { min-height: 92svh; }
+  /*  On a phone the band height IS the crop: `cover` scales a landscape to
+      fill the height, so a tall band shows only a narrow vertical slice.
+      At 78vh a 3:2 photo shows 45% of its width; at 42vh it shows ~85%,
+      which is the difference between a slice and the composition.        */
+  /*  .band--plain marks the purely decorative bands (no copy over them),
+      which is exactly where the tight crop hurt — shrink those hardest.
+      Bands carrying copy keep more height so the text has room and some
+      of the photograph still reads above it.                            */
+  .band--plain.band--tall  { min-height: 42vh; }
+  .band--plain.band--mid   { min-height: 38vh; }
+  .band--tall  { min-height: 56vh; }
+  .band--mid   { min-height: 52vh; }
+  .band--short { min-height: 32vh; }
 }
 
 @media (max-width: 480px) {
